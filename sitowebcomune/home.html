@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Comune di Rovigo</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!--font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!--links per i loghi-->
+  <style>
+/*di1*/
+    
+  .attractions {
+  margin-top: 4%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; 
+}
+
+/*div2*/
+  .card {
+  font-family: 'Rajdhani', sans-serif;
+  max-width: 500px;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin: 30px; 
+}
+
+.card a {
+  text-decoration: none
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(239, 205, 255);
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img{
+  height: 150px;
+}
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #3700AD;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.action span {
+  transition: .3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}
+
+.firstdiv {
+  background-image: url('bghome.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:#f6f6f6;
+  font-family: 'Rajdhani', sans-serif;
+  padding: 20px 100px;
+  border-radius: 30px;
+}
+
+.titolo{
+  font-size: 100px;
+  font-weight: 700;
+ /* border-radius: 30px;
+  background-color: rgba(47, 71, 129, 0.658);*/
+}
+
+.intro{
+  padding: 2px 20px;
+  background-color: #3700ad76;
+  font-size: 30px;
+  font-weight: 400;
+  border-radius: 30px;
+  /*border-radius: 30px;
+  background-color: rgba(47, 71, 129, 0.658);*/
+}
+/*div3*/
+.div3{
+  direction:row;
+  padding: 3%;
+  background-color:#3700AD;
+  color: #f6f6f6;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 25px;
+}
+/*DIV4*/
+.partinf{
+  padding: 80PX 190PX;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+}
+.cardA {
+ width: 190px;
+ height: 254px;
+ background: #3405a3;
+ border-radius: 15px;
+ box-shadow: 1px 5px 60px 0px #100a886b;
+ padding: 10px;
+}
+
+.cardA .card-border-top {
+ width: 60%;
+ height: 3%;
+ background: #6b64f3;
+ margin: auto;
+ border-radius: 0px 0px 15px 15px;
+}
+
+.cardA span {
+ font-weight: 600;
+ color: white;
+ text-align: center;
+ display: block;
+ padding-top: 10px;
+ font-size: 16px;
+}
+
+.cardA .job {
+ font-weight: 400;
+ color: white;
+ display: block;
+ text-align: center;
+ padding-top: 3px;
+ font-size: 12px;
+}
+
+.cardA .profile {
+ width: 90px;
+ height: 100px;
+ background: #6b64f3;
+ border-radius: 15px;
+ margin: auto;
+ margin-top: 25px;
+}
+
+.foto{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.cardA button {
+ padding: 8px 25px;
+ display: block;
+ margin: auto;
+ border-radius: 8px;
+ border: none;
+ margin-top: 30px;
+ background: #6b64f3;
+ color: white;
+ font-weight: 600;
+}
+
+.cardA button:hover {
+ background: #534bf3;
+}
+/*div5*/
+.tabservices{
+  font-family: 'Rajdhani', sans-serif;
+  color: #f6f6f6;
+  background-color: #6b64f3;
+}
+#myTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#myTable td {
+  padding: 50px; color: white; 
+    text-decoration: none;
+}
+    
+
+/*footer*/
+.footer{
+background:#000;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
+
+  </style>
+<body>
+  <!--CLASS1-->
+  <div class="firstdiv">
+    <div class="titolo">
+      DONEC VEL MALELUSA
+    </div>
+    <div class="intro">
+      <p>Donec vel malesuada lacus. Ut mattis mattis bibendum. Duis condimentum dui rhoncus, bibendum ipsum sit amet, cursus arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque quis ligula et lacus consequat mattis. </p>
+    </div>
+
+  </div>
+  <!--CLASS2-->
+  <div class="attractions">
+
+    <div class="card">
+      <div class="image" style="background-image: url('1moattrazione.jpg')"></div>
+      <div class="content">
+        <a href="#">
+          <span class="title">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+        </a>
+    
+        <p class="desc">
+          Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium 
+        </p>
+    
+        <a class="action" href="prezzoatrazzioni.html">
+          Find out more
+          <span aria-hidden="true">
+            →
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image"style="background-image: url('2doatrazzione.jpg');"></div>
+      <div class="content">
+        <a href="#">
+          <span class="title">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+        </a>
+    
+        <p class="desc">
+          Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium 
+        </p>
+    
+        <a class="action" href="prezzoatrazzioni.html">
+          Find out more
+          <span aria-hidden="true">
+            →
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image" style="background-image: url('3zoatrazione.jpg');"></div>
+      <div class="content">
+        <a href="#">
+          <span class="title">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+        </a>
+    
+        <p class="desc">
+          Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium 
+        </p>
+    
+        <a class="action" href="prezzoatrazzioni.html">
+          Find out more
+          <span aria-hidden="true">
+            →
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image"style="background-image: url('5toattrazioni.jpg');"></div>
+      <div class="content">
+        <a href="#">
+          <span class="title">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+        </a>
+    
+        <p class="desc">
+          Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium 
+        </p>
+    
+        <a class="action" href="prezzoatrazzioni.html">
+          Find out more
+          <span aria-hidden="true">
+            →
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image"style="background-image: url('4toattrazioni.jpg');"></div>
+      <div class="content">
+        <a href="#">
+          <span class="title">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </span>
+        </a>
+    
+        <p class="desc">
+          Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium 
+        </p>
+    
+        <a class="action" href="prezzoatrazzioni.html">
+          Find out more
+          <span aria-hidden="true">
+            →
+          </span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <!-- CLASS3-->
+  <div class="div3" style="display: flex; justify-content: space-between;">
+    <div class="fotohistory">
+      <img src="5toattrazioni.jpg" style="width: 500px; height: auto; border-radius: 30px;">
+    </div>
+    <div class="history" style="flex-grow: 1; margin-left:50px;">
+      <h1>HISTORY</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed non risus. Suspendisse lectus tortor, dignissim sit amet.
+        Adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
+        Maecenas ligula massa, varius a, semper congue.
+        Euismod non, mi. <br> Proin porttitor, orci nec nonummy molestie.
+        Enim est eleifend mi, non fermentum diam nisl sit amet erat.
+        Duis semper. Duis arcu massa, scelerisque vitae.
+      </p>
+    </div>
+  </div>
+  <!--CLASSE4-->
+  <div class="partinf">
+    <div class="cardA">
+      <div class="card-border-top">
+      </div>
+      <div class="profile"><img class="foto" src="icusuario.jpg">
+      </div>
+      <span> SINDACO</span>
+      <p class="job"> Job Title</p>
+      <button onclick="vita_civ.html"> Click
+      </button>
+    </div>
+
+    <div class="cardA">
+      <div class="card-border-top">
+      </div>
+      <div class="profile"><img class="foto" src="icusuario.jpg">
+      </div>
+      <span> DIRIGENTE</span>
+      <p class="job"> Job Title</p>
+      <button onclick="vita_civ.html"> Click
+      </button>
+    </div>
+
+    <div class="cardA">
+      <div class="card-border-top">
+      </div>
+      <div class="profile"><img class="foto" src="icusuario.jpg">
+      </div>
+      <span> AMMINISTRATORE</span>
+      <p class="job"> Job Title</p>
+      <button onclick="vita_civ.html"> Click
+      </button>
+    </div>
+  </div>
+  <!--classe5-->
+  <div class="tabservices">
+    <table id="myTable">
+      <tr>
+        <td>
+          <h1><a href="servizzi.html">Titolo 1</a></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat.</p>
+        </td>
+        <td>
+          <h1><a href="servizzi.html">Titolo 2</a></h1>
+          <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget.</p>
+        </td>
+        <td>
+          <h1><a href="servizzi.html">Titolo 3</a></h1>
+          <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h1><a href="servizzi.html">Titolo 4</a></h1>
+          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+        </td>
+        <td>
+          <h1><a href="servizzi.html">Titolo 5</a></h1>
+          <p>Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.</p>
+        </td>
+        <td>
+          <h1><a href="servizzi.html">Titolo 6</a></h1>
+          <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget.</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <footer>
+    <div class="footer">
+    <div class="row">
+    <a href="https://it-it.facebook.com/"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+    <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+    </div>
+    
+    <div class="row">
+    <ul>
+    <li><a href="servizzi.html">Amministrazione</a></li>
+    <li><a href="servizzi.html">Servizizi</a></li>
+    <li><a href="vita_civ.html">vita civile</a></li>
+    <li><a href="cultura.html">cultura</a></li>
+    <li><a href="cookies.html">cookies</a></li>
+    </ul>
+    </div>
+    
+    <div class="row">
+    Itis Copyright © 2023 4dINFO - All rights reserved || Designed By: mishi 
+    </div>
+    </div>
+    </footer>
+</body>
+</html>

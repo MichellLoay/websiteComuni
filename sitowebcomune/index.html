@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Il mio sito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f6f6f6;
+      margin: 0;
+    }
+
+    .barra {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .hpage {
+      background-color: #f6f6f6;
+      border: none;
+      height: auto;
+    }
+
+    .logo {
+      height: 200px;
+      margin-right: 10px;
+    }
+
+    .content-bot {
+      height: 80%;
+      width: 100%;
+    }
+
+    .infos {
+      width: auto;
+      font-size: 30px;
+      color: black;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      cursor: pointer;
+      position: relative;
+      border: none;
+      background: none;
+      text-transform: uppercase;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: color;
+      margin: 10px;
+    }
+
+    .infos:focus:after,
+    button:hover:after {
+      width: 100%;
+      left: 0%;
+    }
+
+    .infos:after {
+      content: "";
+      pointer-events: none;
+      bottom: -7px;
+      left: 50%;
+      position: absolute;
+      width: 0%;
+      height: 10px;
+      background-color: #3700AD;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: width, left;
+    }
+
+    .search {
+      margin-left: auto;
+      display: inline-block;
+      position: relative;
+      font-size: 25px;
+    }
+
+    .search input[type="text"] {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: 25px;
+      width: 250px;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .search button[type="submit"] {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 25px;
+      font-weight: 700;
+      background-color: black;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: .4s ease;
+    }
+
+    .search button[type="submit"]:hover {
+      font-family: 'Rajdhani', sans-serif;
+      transform: scale(1.1);
+      color: rgb(255, 255, 255);
+      background-color: #3700AD;
+    }
+
+    /* Establecemos un estilo inicial para el iframe */
+    #pantalla {
+      width: 100%;
+      border: none;
+      height: 500px; /* Establecemos una altura inicial */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="barra">
+    <button class="hpage" onclick="document.getElementById('pantalla').src='home.html'">
+      <img class="logo" src="logo.jpg" alt="Logo">
+    </button>
+
+    <div style="display: flex; flex-direction: column; height: 100%; width: 100%;">
+      <div class="content-bot">
+        <button class="infos" onclick="document.getElementById('pantalla').src='amministrazione.html'">AMMINISTRAZIONE</button>
+        <button class="infos" onclick="document.getElementById('pantalla').src='servizzi.html'">SERVIZZI</button>
+        <button class="infos" onclick="document.getElementById('pantalla').src='vita_civ.html'">VITA CIVILE</button>
+        <button class="infos" onclick="document.getElementById('pantalla').src='cultura.html'">CULTURA</button>
+      </div>
+      <div class="search">
+        <input placeholder="COSA CERCHI?..." type="text">
+        <button type="submit">GO</button>
+      </div>
+    </div>
+  </div>
+  <iframe id="pantalla" src='home.html'></iframe>
+</body>
+
+</html>

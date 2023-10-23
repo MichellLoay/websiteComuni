@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>rsevices</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;-->
+</head>
+<style>
+    body {
+        font-family: 'Rajdhani', sans-serif;
+    }
+
+    header {
+        background-color: #3700AD;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        padding: 20px;
+        font-size: 24px;
+    }
+
+    nav {
+        background-color: #3700AD;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .section {
+        margin-bottom: 20px;
+        border: 1px solid #3700AD;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    h2 {
+        color: #3700AD;
+        font-weight: 500;
+    }
+
+    footer {
+        background-color: #3700AD;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .event-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .event-list-item {
+        color: #000;
+        transition: color 0.3s;
+    }
+
+    .event-list-item:hover {
+        color: #FFA7D1;
+    }
+
+    .data-column {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titolo {
+        font-weight: 700;
+        font-size: 100px;
+        padding: 15px;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+        color: #3700AD;
+    }
+
+    a {
+        font-size: 25px;
+        text-decoration: none;
+    }
+
+    a:link {
+        color: rgb(109, 112, 210);
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    a:hover {
+        color: #FFC2E2;
+    }
+
+    a:active {
+        color: yellow;
+    }
+
+    /*footer*/
+    .footer {
+        background: #000;
+        padding: 30px 0px;
+        font-family: 'Play', sans-serif;
+        text-align: center;
+    }
+
+    .footer .row {
+        width: 100%;
+        margin: 1% 0%;
+        padding: 0.6% 0%;
+        color: gray;
+        font-size: 0.8em;
+    }
+
+    .footer .row a {
+        text-decoration: none;
+        color: gray;
+        transition: 0.5s;
+    }
+
+    .footer .row a:hover {
+        color: #fff;
+    }
+
+    .footer .row ul {
+        width: 100%;
+    }
+
+    .footer .row ul li {
+        display: inline-block;
+        margin: 0px 30px;
+    }
+
+    .footer .row a i {
+        font-size: 2em;
+        margin: 0% 1%;
+    }
+
+    .calendar {
+        border: 4px solid black;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .calendar table {
+        width: 100%;
+    }
+
+    .calendar th {
+        font-weight: 700;
+        font-size: 20px;
+        color: black;
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    .calendar td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    .calendar td a {
+        text-decoration: none;
+        background-color: white;
+        border-radius: 20px;
+        padding: 4px;
+    }
+
+    .calendar td a:hover {
+        background-color: #FFC2E2;
+        color: black;
+    }
+
+    .column {
+        width: 50%;
+        float: left;
+    }
+
+    /* Aggiunto stile per le colonne delle comunicazioni */
+    .column p {
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        margin: 10px;
+    }
+
+</style>
+
+<body>
+    <div class="titolo">VITA CIVILE</div>
+
+    <header>
+        Comune di Rovigo
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#comunicazioni">Comunicazioni</a></li>
+            <li><a href="#aggiornamenti">Aggiornamenti</a></li>
+            <li><a href="#eventi">Eventi</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="section" id="comunicazioni">
+            <h2>Comunicazioni</h2>
+            <div class="data-column">
+                <div class="column">
+                    <p><a href="rezzoatrazioni.html">Comunicazione 1</a></p>
+                    <p><a href="rezzoatrazioni.html">Comunicazione 2</a></p>
+                    <p><a href="rezzoatrazioni.html">Comunicazione 3</a></p>
+                    <p><a href="rezzoatrazioni.html">Comunicazione 4</a></p>
+                    <p><a href="rezzoatrazioni.html">Comunicazione 5</a></p>
+                </div>
+                <div class="column">
+                    <p><a href="rezzoatrazioni.html">Comunicazione 6</a></p>
+                    <p><a href="rezzoatrazioni.html">Comunicazione 7</a></p>
+                    <p><a href="rezzoatrazioni.html">Comunicazione 8</a></p>
+                    <p><a href="rezzoatrazioni.html">Comunicazione 9</a></p>
+                    <p><a href="rezzoatrazioni.html">Comunicazione 10</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="aggiornamenti">
+            <h2>Aggiornamenti</h2>
+            <div class="data-column">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aggiungi qui più testo per gli aggiornamenti.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="section" id="eventi">
+            <h2>Eventi</h2>
+            <div class="calendar">
+                <table>
+                    <tr>
+                        <th colspan="7">Novembre 2023</th>
+                    </tr>
+                    <tr>
+                        <th>Lun</th>
+                        <th>Mar</th>
+                        <th>Mer</th>
+                        <th>Gio</th>
+                        <th>Ven</th>
+                        <th>Sab</th>
+                        <th>Dom</th>
+                    </tr>
+                    <tr>
+                        <td><a href="eventi.html">1</a>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                        </td>
+                        <td><a href="eventi.html">2</a>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                        </td>
+                        <td><a href="eventi.html">3</a>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                        </td>
+                        <td><a href="eventi.html">4</a>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                        </td>
+                        <td><a href="eventi.html">5</a>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                        </td>
+                        <td><a href="eventi.html">6</a>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                        </td>
+                        <td><a href="eventi.html">7</a>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="eventi.html">8</a></td>
+                        <td><a href="eventi.html">9</a>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                            Recusandae
+                        </td>
+                        <td><a href="eventi.html">10</a></td>
+                        <td><a href="eventi.html">11</a></td>
+                        <td><a href="eventi.html">12</a></td>
+                        <td><a href="eventi.html">13</a></td>
+                        <td><a href="eventi.html">14</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="eventi.html">15</a></td>
+                        <td><a href="eventi.html">16</a></td>
+                        <td><a href="eventi.html">17</a>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                        </td>
+                        <td><a href="eventi.html">18</a>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                        </td>
+                        <td><a href="eventi.html">19</a></td>
+                        <td><a href="eventi.html">20</a>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                        </td>
+                        <td><a href="eventi.html">21</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="eventi.html">22</a></td>
+                        <td><a href="eventi.html">23</a></td>
+                        <td><a href="eventi.html">24</a>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                        </td>
+                        <td><a href="eventi.html">25</a>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                        </td>
+                        <td><a href="eventi.html">26</a>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                        </td>
+                        <td><a href="eventi.html">27</a></td>
+                        <td><a href="eventi.html">28</a>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="eventi.html">29</a></td>
+                        <td><a href="eventi.html">30</a>
+                            <p>Recusandae</p>
+                            <p>Recusandae</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="https://it-it.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="row">
+                <ul>
+                    <li><a href="servizzi.html">Amministrazione</a></li>
+                    <li><a href="servizzi.html">Servizizi</a></li>
+                    <li><a href="vita_civ.html">vita civile</a></li>
+                    <li><a href="cultura.html">cultura</a></li>
+                    <li><a href="cookies.html">cookies</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                Itis Copyright © 2023 4dINFO - All rights reserved || Designed By: mishi
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

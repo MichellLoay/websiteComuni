@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--links per i loghi-->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        #container {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #title {
+            text-align: center;
+        }
+
+        #content {
+            display: flex;
+        }
+
+        .side {
+            margin: 20px;
+        }
+
+        #image img {
+            width: 200px;
+            transition: transform 0.2s;
+        }
+
+        #image img:hover {
+            transform: scale(1.1);
+        }
+
+        .custom-table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 4px dashed #3700AD;
+        }
+
+        .custom-table th, .custom-table td {
+            padding: 10px;
+            border: 4px dashed #3700AD;
+        }
+
+        #info h2 {
+            margin-top: 20px;
+        }
+
+        #info p {
+            padding: 10px;
+        }
+
+        /*footer*/
+.footer{
+background: #3700AD;;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:rgb(217, 239, 252);
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:rgb(199, 216, 240);
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
+
+    </style>
+    <title>Sito Web</title>
+</head>
+<body>
+    <div id="container">
+        <div id="title">
+            <h1>Lorem Ipsum</h1>
+        </div>
+        <div id="content">
+            <div class="side">
+                <div id="image">
+                    <img src="https://bur.regione.veneto.it/resourcegallery/photos/452_Rovigo_ro_Teatro%20sociale.jpg" alt="Immagine">
+                </div>
+            </div>
+            <div class="side">
+                <div id="schedule">
+                    <table class="custom-table">
+                        <tr>
+                            <th>Giorno</th>
+                            <th>Orari di Visita</th>
+                        </tr>
+                        <tr>
+                            <td>Lunedì - Venerdì</td>
+                            <td>10:00 - 13:00, 15:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sabato - Domenica</td>
+                            <td>Chiuso</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="info">
+                    <h2>Storia</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non odio eget purus dignissim vestibulum. In nec elit eget turpis laoreet venenatis a nec risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non odio eget purus dignissim vestibulum. In nec elit eget turpis laoreet venenatis a nec risusLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non odio eget purus dignissim vestibulum. In nec elit eget turpis laoreet venenatis a nec risus...</p>
+                    <h2>Prezzi per Giorno</h2>
+                    <table class="custom-table">
+                        <tr>
+                            <th>Giorno</th>
+                            <th>Prezzo</th>
+                        </tr>
+                        <tr>
+                            <td>Lunedì - Venerdì</td>
+                            <td>$10</td>
+                        </tr>
+                        <tr>
+                            <td>Sabato - Domenica</td>
+                            <td>Chiuso</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="https://it-it.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="servizzi.html">Amministrazione</a></li>
+        <li><a href="servizzi.html">Servizizi</a></li>
+        <li><a href="vita_civ.html">vita civile</a></li>
+        <li><a href="cultura.html">cultura</a></li>
+        <li><a href="cookies.html">cookies</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+        Itis Copyright © 2023 4dINFO - All rights reserved || Designed By: mishi 
+        </div>
+        </div>
+        </footer>
+</body>
+</html>
